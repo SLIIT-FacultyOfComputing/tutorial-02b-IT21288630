@@ -17,18 +17,23 @@ using namespace std;
 
 int main()
 {
+  //creating variables
    double salary, netSalary;
    int etype, otHrs, otRate;
 
+  //getting employee type
    std::cout << "Enter Employee Type : ";
    std::cin >> etype;
 
+  //getting employee salary
    std::cout << "Enter Salary  : ";
    std::cin >> salary;
 
+  //getting employee otHours
    std::cout << "Enter OtHrs : ";
    std::cin >> otHrs; 
    
+  //checking the type
    switch (etype)
    {
       case 1 :
@@ -43,9 +48,9 @@ int main()
    }
 
 
-   netSalary = salary + otHrs * otRate;
+   netSalary = salary + otHrs * otRate;//calculation
 
-   std::cout << "Net Salary is " << netSalary;
+   std::cout << "Net Salary is " << netSalary;//output
   
    return 0;
 }

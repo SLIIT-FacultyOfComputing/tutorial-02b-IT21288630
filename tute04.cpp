@@ -13,6 +13,7 @@ Do not modify the main function.*/
 
 #include <iostream>
 
+//function declaration
 long Factorial(int no);
 long nCr(int n, int r);
 
@@ -28,12 +29,13 @@ int main() {
   return 0;
 }
 
-long Factorial(int no)
+long Factorial(int no)//function Implementation
 {
+  //creating variables
   int i;
   long ans = 1;
 
-  for(i = 1; i <= no; i++)
+  for(i = 1; i <= no; i++)//calculation
   {
     ans *= i;
   }
@@ -41,10 +43,12 @@ long Factorial(int no)
   return ans;
 }
 
-long nCr(int n, int r)
+long nCr(int n, int r)//function Implementation
 {
+  //creating variable
   long ans;
 
+  //calculation
   ans = Factorial(n) / (Factorial(r) * Factorial(n - r));
 
   return ans;

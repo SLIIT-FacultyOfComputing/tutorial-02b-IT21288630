@@ -9,9 +9,11 @@ using namespace std;
 
 int main()
 {
+    //creating variables
     int no;
     long fac;
 
+    //getting the input
     std::cout << "Enter a Number : ";
     std::cin >> no;
 
@@ -19,10 +21,11 @@ int main()
 
     for (int r=no; r >= 1; r--) 
     {
-        fac = fac * r;
+        fac = fac * r;//calculate the factorial
     }
 
-    std::cout << "Factorial of " << no << " is " << fac; 
+    //output 
+    std::cout << "Factorial of " << no << " is " << fac;
 
     return 0;
 }

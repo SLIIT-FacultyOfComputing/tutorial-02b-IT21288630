@@ -23,14 +23,16 @@ using namespace std;
 
 int main() 
 {
+    //creating variables
     float cm, inches;
 
+    //getting input
     std::cout << "Enter a length in cm : ";
     std::cin >> cm;
 
-    inches = cm / 2.54;
+    inches = cm / 2.54;//calculation
 
-    std::cout << "Length in inches is " << inches;
+    std::cout << "Length in inches is " << inches;//output
 
     return 0;
 }  
